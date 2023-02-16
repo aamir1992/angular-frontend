@@ -8,9 +8,8 @@ const baseUrl = 'https://angular-backend.vercel.app/api/tutorials';
 const headers= new HttpHeaders()
   .set('content-type', 'application/json')
   .set('Access-Control-Allow-Origin', '*')
-  .set('Access-Control-Allow-Credentials', 'true')
   .set('Access-Control-Allow-Headers', 'Content-Type')
-  .set('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE')
+  .set('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
 
 @Injectable({
   providedIn: 'root'
