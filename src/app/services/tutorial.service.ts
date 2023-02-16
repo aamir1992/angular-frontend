@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Tutorial } from '../models/tutorial.model';
 
-const baseUrl = 'http://localhost:8081/api/tutorials';
+const baseUrl = 'https://angular-backend.vercel.app/api/tutorials';
 
 const headers= new HttpHeaders()
   .set('content-type', 'application/json')
