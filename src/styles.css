@@ -1,2 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+
+body {
+    font-family: sans-serif;
+}
+.descList {
+    font-size: 14px;
+}
+.badge {
+    text-decoration: none;
+    padding: 8px 12px;
+    border: none;
+}
+.badge-warning {
+    color: #212529;
+    background-color: #ffc107;
+}
+.badge-primary {
+    color: #fff;
+    background-color: #007bff;
+}
+.badge-secondary {
+    color: #fff;
+    background-color: #6c757d;
+}
+.badge-success {
+    color: #fff;
+    background-color: #28a745;
+}
+.badge-danger {
+    color: #fff;
+    background-color: #dc3545;
+}
+.badge-info {
+    color: #fff;
+    background-color: #17a2b8;
+}
+.badge-light {
+    color: #212529;
+    background-color: #f8f9fa;
+}
+.badge-dark {
+    color: #fff;
+    background-color: #343a40;
+}
+.j-center {
+    justify-content: center;
+}
+
+.badge-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

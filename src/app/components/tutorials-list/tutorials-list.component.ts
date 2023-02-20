@@ -13,6 +13,7 @@ export class TutorialsListComponent implements OnInit {
   currentTutorial: Tutorial = {};
   currentIndex = -1;
   title = '';
+  noRecordFound = false;
 
   constructor(private tutorialService: TutorialService) { }
 
@@ -25,6 +26,11 @@ export class TutorialsListComponent implements OnInit {
       .subscribe({
         next: (data) => {
           this.tutorials = data;
+          if(data.length > 0) {
+            this.noRecordFound = false
+          } else {
+            this.noRecordFound = true
+          }
           console.log(data);
         },
         error: (e) => console.error(e)

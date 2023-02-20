@@ -3,3 +3,11 @@
   max-width: 750px;
   margin: auto;
 }
+.list-group-item {
+  cursor: pointer;
+}
+.list-group-item.active {
+  color: #000000;
+  background-color: #f7d4a0;
+  border-color: #f7d4a0;
+}
